@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>"Chess_v0.0"</title>
+
+    <style>
+        table {
+            min-width: 80vw;
+            min-height: 80vw;
+            border-collapse: collapse;
+        }
+        td {
+            background-color: rgb(87, 87, 87);
+            text-align: center;
+        }
+        td.kampas {
+            height: 4%;
+            width: 4%;
+        }
+        td.zalias {
+            height: 11.5%;
+            width: 11%.5;
+            background-color: rgb(1, 161, 1);
+        }
+        td.raudonas {
+            /*height: 11.5%;
+            width: 11.5%; dubliuojasi */
+            background-color: rgb(255, 0, 0);
+        }
+
+        div {
+            color: white;
+            font-size: 3vw;
+        }
+        div.figura {
+            color: black;
+            font-size: 5vw;
+        }
+        div.virsus{
+            transform: rotate(180deg);
+            -webkit-transform: rotate(180deg);
+            /* Safari/Chrome */
+            -moz-transform: rotate(180deg);
+            /* Firefox */
+            -o-transform: rotate(180deg);
+            /* Opera */
+            -ms-transform: rotate(180deg);
+            /* IE 9 */
+        }
+        div.kaire {
+            transform: rotate(-90deg);
+            -webkit-transform: rotate(-90deg);
+            /* Safari/Chrome */
+            -moz-transform: rotate(-90deg);
+            /* Firefox */
+            -o-transform: rotate(-90deg);
+            /* Opera */
+            -ms-transform: rotate(-90deg);
+            /* IE 9 */
+        }
+
+        div.desine {
+            transform: rotate(90deg);
+            -webkit-transform: rotate(90deg);
+            /* Safari/Chrome */
+            -moz-transform: rotate(90deg);
+            /* Firefox */
+            -o-transform: rotate(90deg);
+            /* Opera */
+            -ms-transform: rotate(90deg);
+            /* IE 9 */
+        }
+    </style>
+</head>
+
+<body>
+
+    <table>
+        <tr>
+            <td class="kampas">
+            </td>
+            <td>
+                <div class="virsus">a</div>
+            </td>
+            <td>
+                <div class="virsus">b</div>
+            </td>
+            <td>
+                <div class="virsus">c</div>
+            </td>
+            <td>
+                <div class="virsus">d</div>
+            </td>
+            <td>
+                <div class="virsus">e</div>
+            </td>
+            <td>
+                <div class="virsus">f</div>
+            </td>
+            <td>
+                <div class="virsus">g</div>
+            </td>
+            <td>
+                <div class="virsus">h</div>
+            </td>
+            <td class="kampas">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div class="kaire">8</div>
+            </td>
+            <td class="zalias">
+
+                <div class="figura">&#9820;
+                </div>
+            </td>
+            <td class="raudonas">
+                <div class="figura">&#9822;
+                </div>
+            </td>
+            <td class="zalias">
+                <div class="figura">&#9821;
+                </div>
+            </td>
+            <td class="raudonas">
+                <div class="figura">&#9818;
+                </div>
+            </td>
+            <td class="zalias">
+                <div class="figura">&#9819;
+                </div>
+            </td>
+            <td class="raudonas">
+                <div class="figura">&#9821;
+                </div>
+            </td>
+            <td class="zalias">
+                <div class="figura">&#9822;
+                </div>
+            </td>
+            <td class="raudonas">
+                <div class="figura">&#9820;
+                </div>
+            </td>
+            <td>
+                <div class="desine">8</div>
+
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <div class="kaire">7</div>
+            </td>
+            <td class="raudonas">
+                <div class="figura">&#9823;</div>
+            </td>
+            <td class="zalias">
+                <div class="figura">&#9823;</div>
+            </td>
+            <td class="raudonas">
+                <div class="figura">&#9823;</div>
+            </td>
+            <td class="zalias">
+                <div class="figura">&#9823;</div>
+            </td>
+            <td class="raudonas">
+                <div class="figura">&#9823;</div>
+            </td>
+            <td class="zalias">
+                <div class="figura">&#9823;</div>
+            </td>
+            <td class="raudonas">
+                <div class="figura">&#9823;</div>
+            </td>
+            <td class="zalias">
+                <div class="figura">&#9823;</div>
+            </td>
+            <td>
+                <div class="desine">7</div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div class="kaire">6</div>
+            </td>
+            <td class="zalias">
+            </td>
+            <td class="raudonas">
+            </td>
+            <td class="zalias">
+            </td>
+            <td class="raudonas">
+            </td>
+            <td class="zalias">
+            </td>
+            <td class="raudonas">
+            </td>
+            <td class="zalias">
+            </td>
+            <td class="raudonas">
+            </td>
+            <td>
+                <div class="desine">6</div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div class="kaire">5</div>
+            </td>
+            <td class="raudonas">
+            </td>
+            <td class="zalias">
+            </td>
+            <td class="raudonas">
+            </td>
+            <td class="zalias">
+            </td>
+            <td class="raudonas">
+            </td>
+            <td class="zalias">
+            </td>
+            <td class="raudonas">
+            </td>
+            <td class="zalias">
+            </td>
+            <td>
+                <div class="desine">5</div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div class="kaire">4</div>
+            </td>
+            <td class="zalias">
+            </td>
+            <td class="raudonas">
+            </td>
+            <td class="zalias">
+            </td>
+            <td class="raudonas">
+            </td>
+            <td class="zalias">
+            </td>
+            <td class="raudonas">
+            </td>
+            <td class="zalias">
+            </td>
+            <td class="raudonas">
+            </td>
+            <td>
+                <div class="desine">4</div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div class="kaire">3</div>
+            </td>
+            <td class="raudonas">
+            </td>
+            <td class="zalias">
+            </td>
+            <td class="raudonas">
+            </td>
+            <td class="zalias">
+            </td>
+            <td class="raudonas">
+            </td>
+            <td class="zalias">
+            </td>
+            <td class="raudonas">
+            </td>
+            <td class="zalias">
+            </td>
+            <td>
+                <div class="desine">3</div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div class="kaire">2</div>
+            </td>
+            <td class="zalias">
+                <div class="figura">&#9817;</div>
+            </td>
+            <td class="raudonas">
+                <div class="figura">&#9817;</div>
+            </td>
+            <td class="zalias">
+                <div class="figura">&#9817;</div>
+            </td>
+            <td class="raudonas">
+                <div class="figura">&#9817;</div>
+            </td>
+            <td class="zalias">
+                <div class="figura">&#9817;</div>
+            </td>
+            <td class="raudonas">
+                <div class="figura">&#9817;</div>
+            </td>
+            <td class="zalias">
+                <div class="figura">&#9817;</div>
+            </td>
+            <td class="raudonas">
+                <div class="figura">&#9817;</div>
+            </td>
+            <td>
+                <div class="desine">2</div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div class="kaire">1</div>
+            </td>
+            <td class="raudonas">
+                <div class="figura">&#9814;
+                </div>
+            </td>
+            <td class="zalias">
+                <div class="figura">&#9816;
+                </div>
+            </td>
+            <td class="raudonas">
+                <div class="figura">&#9815;
+                </div>
+            </td>
+            <td class="zalias">
+                <div class="figura">&#9812;
+                </div>
+            </td>
+            <td class="raudonas">
+                <div class="figura">&#9813;
+                </div>
+            </td>
+            <td class="zalias">
+                <div class="figura">&#9815;
+                </div>
+            </td>
+            <td class="raudonas">
+                <div class="figura">&#9816;
+                </div>
+            </td>
+            <td class="zalias">
+                <div class="figura">&#9814; </div>
+            </td>
+            <td>
+                <div class="desine">1</div>
+            </td>
+        </tr>
+        <tr>
+            <td class="kampas">
+            </td>
+            <td>
+                <div>a</div>
+            </td>
+            <td>
+                <div>b</div>
+            </td>
+            <td>
+                <div>c</div>
+            </td>
+            <td>
+                <div>d</div>
+            </td>
+            <td>
+                <div>e</div>
+            </td>
+            <td>
+                <div>f</div>
+            </td>
+            <td>
+                <div>g</div>
+            </td>
+            <td>
+                <div>h</div>
+            </td>
+            <td class="kampas">
+            </td>
+        </tr>
+    </table>
+</body>
+
+</html>
